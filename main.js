@@ -65,3 +65,22 @@ Snack 3 (Bonus)
 Scrivere una funzione che accetti tre argomenti, un array ( esempio: ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'] )e due numeri (a più piccolo di b).
 La funzione ritornerà un nuovo array con li elementi estratti dall'array di partenza che hanno la posizione compresa tra i due numeri (a e b).
 */
+
+let min = 0;
+let max = 4;
+let arrayIniziale = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara', 'Luca', 'Andrea', 'Martina'];
+
+let arrayCompreso = [];
+
+function compresoTra(array1, a, b, array2){
+for (let i = 0; i < array1.length; i++){
+    if( i > a && i < b ){
+        array2.push(array1[i]);
+    }
+}
+return console.log(array2);
+}
+
+
+
+compresoTra (arrayIniziale, min, max, arrayCompreso );
