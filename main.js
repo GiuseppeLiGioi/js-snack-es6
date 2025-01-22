@@ -35,6 +35,30 @@ Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “
 Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 */
 
+const squadre = [
+    { nome: "Juventus", punti: 0, falliSubiti: 0 },
+    { nome: "Inter Milan", punti: 0, falliSubiti: 0 },
+    { nome: "AC Milan", punti: 0, falliSubiti: 0 },
+    { nome: "Roma", punti: 0, falliSubiti: 0 },
+    { nome: "Napoli", punti: 0, falliSubiti: 0 },
+    { nome: "Lazio", punti: 0, falliSubiti: 0 },
+    { nome: "Atalanta", punti: 0, falliSubiti: 0 },
+    { nome: "Fiorentina", punti: 0, falliSubiti: 0 }
+  ];
+  
+
+  let newSquadre = [];
+  for (let i = 0; i < squadre.length; i++){
+    squadre[i].punti = Math.floor(Math.random() * 90 - 10 ) +10;
+    squadre[i].falliSubiti = Math.floor(Math.random() * 200 - 30 ) +30;
+}
+//console.log(squadre);
+
+for (let i = 0; i < squadre.length; i++){
+    newSquadre.push(squadre[i].nome);
+    newSquadre.push(squadre[i].falliSubiti);
+}
+console.log(newSquadre);
 
 /*
 Snack 3 (Bonus)
